@@ -6,3 +6,4 @@
  ## Tecnologias utilizadas:
  - Node
    - Tipescript
+ - WebSocket
