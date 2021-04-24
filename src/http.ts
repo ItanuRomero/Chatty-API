@@ -13,7 +13,7 @@ app.set("view engine", "html");
 
 app.get("/pages/client", (req, res) => {
     return res.render("html/client.html")
-})
+});
 
 // Criando o protocolo http
 const http = createServer(app);
@@ -21,8 +21,8 @@ const http = createServer(app);
 const io = new Server(http);
 
 io.on("connection", (socket: Socket) => {
-    console.log("conectado", socket.id)
-})
+    //console.log("Conectado", socket.id)
+});
 
 app.use(express.json());
 
@@ -43,4 +43,4 @@ app.get("/", (req, res) => {
     });
 });
 
-export {http, io}
+export {http, io};
